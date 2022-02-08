@@ -5,5 +5,14 @@ class Counter{
   
   void increment() => entero ++;
   void decremnte() => entero --; 
+  
+  Future<String> getData() async{
+
+    if(0 == entero){
+      return 'Data';
+    } else{
+     return 'Data2';
+    }
+  }
 
 }
