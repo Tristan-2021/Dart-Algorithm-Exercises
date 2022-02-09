@@ -20,9 +20,16 @@ void main() {
       expect(k.entero, -1);
     });
 
-    test('should retorn DATA2 when incremented', () async {
+    test('should retorn Data when incremented', () async {
       var k = Counter();
       k.increment();
+      var s = await k.getData();
+
+      expect(s, 'Data');
+    });
+    test('should retorn DATA1 when decrement', () async {
+      var k = Counter();
+      k.decremnte();
       var s = await k.getData();
 
       expect(s, 'Data2');

@@ -7,6 +7,7 @@ class Counter{
   void decremnte() => entero --; 
   
   Future<String> getData() async{
+    print(entero);
 
     if(1 == entero){
       return 'Data';
