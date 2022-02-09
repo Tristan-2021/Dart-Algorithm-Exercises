@@ -8,7 +8,7 @@ class Counter{
   
   Future<String> getData() async{
 
-    if(0 == entero){
+    if(1 == entero){
       return 'Data';
     } else{
      return 'Data2';
