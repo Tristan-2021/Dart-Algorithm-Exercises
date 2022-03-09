@@ -1,3 +1,4 @@
+
  void main() {
   print('star..!!!');
 
@@ -8,11 +9,13 @@
   Future.delayed(const Duration(seconds: 1 ), ()=> Future(() => 4) ).then(print);
 
   Future.value(5).then(print);
+  Future.microtask(() => 9).then( print);
+   
   Future.value(Future(() => 6 ) ).then(print);
 
    Future.sync(() => 7).then(print);
    Future.sync(() => Future(() => 8 ) ).then(print);
-   Future.microtask(() => 9).then( print);
+   
    Future.microtask(() => Future(() => 10 )).then( print);
   Future(() =>  11  ).then( print);
   Future(() => Future(() => 12 ) ).then( print);
